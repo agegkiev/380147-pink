@@ -1,12 +1,180 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <a class="logo">
+      <img class="logo__image" src="http://placehold.it/150x100" alt="Пинк">
+    </a>
+    <button class="page-header__menu-toggle"></button>
+    <nav class="main-nav-hidden">
+      <ul class="main-nav-hidden__list list">
+        <li class="list__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="list__item">
+          <a href="photo.html">Фотографии</a>
+        </li>
+        <li class="list__item">
+          <a href="#">Конкурс</a>
+        </li>
+        <li class="list__item">
+          <a href="https://htmlacademy.ru/">html academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="page-main__intro intro">
+      <div class="intro__slide phone">
+        <img class="phone__hand" src="#" alt="">
+        <img class="phone__phone-image" src="#" alt="">
+      </div>
+      <div class="intro__links link">
+        <a class="button" href="#">Скачать приложение</a>
+        <ul class="link__container">
+          <li>
+            <a class="link__apple-btn" href="#">
+              <span class="visually-hidden">Apple</span>
+            </a>
+          </li>
+          <li>
+            <a class="link__android-btn" href="#">
+              <span class="visually-hidden">Android</span>
+            </a>
+          </li>
+          <li>
+            <a class="link__microsoft-btn" href="#">
+              <span class="visually-hidden">Microsoft</span>
+            </a>
+          </li>
+        </ul>
+        <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </section>
+    <section class="page-main__benefits benefits">
+      <div class="benefits__title">
+        <p>Устали от серости мегаполиса?</p>
+        <p>Нам есть, что вам предложить!</p>
+      </div>
+      <div class="benefits__item">
+        <h3>Поднимает настроение</h3>
+        <p>Приложенеи позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+      </div>
+      <div class="benefits__item">
+        <h3>Меняет мир вокруг</h3>
+        <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+      </div>
+      <div class="benefits__item">
+        <h3>Заводит новых друзей</h3>
+        <p>Ставьте лайки, комментируйте, делитесь фотографями с друзьями и заводите новых</p>
+      </div>
+      <div class="phone">
+        <img class="phone__hand" src="#" alt="">
+        <img class="phone__phone-image" src="#" alt="">
+        <p class="phone__smile">Всем привет</p>
+      </div>
+    </section>
+
+    <section class="page-main__reviews carousel">
+      <input class="visually-hidden btn-1" type="radio" id="btn-1" name="toggle" checked>
+      <input class="visually-hidden btn-2" type="radio" id="btn-2" name="toggle">
+      <input class="visually-hidden btn-3" type="radio" id="btn-3" name="toggle">
+      <div class="carousel__controls">
+        <label for="btn-1"></label>
+        <label for="btn-2"></label>
+        <label for="btn-3"></label>
+      </div>
+      <div class="carousel__inner">
+        <div class="carousel__sliders">
+          <div class="slider">
+            <h3>Николай Петров</h3>
+            <p>«Это приложение перевернуло мой мир и повзолило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </div>
+          <div class="slider">
+            <h3>Николай Петров</h3>
+            <p>«Это приложение перевернуло мой мир и повзолило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </div>
+          <div class="slider">
+            <h3>Николай Петров</h3>
+            <p>«Это приложение перевернуло мой мир и повзолило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-main__price carousel">
+      <input class="visually-hidden carousel__btn-4" type="radio" id="btn-4" name="toggle-rice" checked>
+      <input class="visually-hidden carousel__btn-5" type="radio" id="btn-5" name="toggle-rice">
+      <input class="visually-hidden carousel__btn-6" type="radio" id="btn-6" name="toggle-rice">
+      <div class="carousel__controls">
+        <label for="btn-4"></label>
+        <label for="btn-5"></label>
+        <label for="btn-6"></label>
+      </div>
+      <div class="carousel__inner">
+        <div class="carousel__sliders">
+          <!--Планирую таблицу через css сделать-->
+          <div class="slider">
+            <div>
+              <h3>Стандарт</h3>
+              <span>3,99 USD</span>
+            </div>
+            <!--<p> будут строками таблицы, span - текст, иконку псевдо элементоv от span-->
+            <p><span>розовый фильтр</span></p>
+            <p><span>смайлики</span></p>
+            <p><span>комментарии</span></p>
+          </div>
+          <div class="slider--hit">
+            <div>
+              <h3>Стандарт</h3>
+              <span>3,99 USD</span>
+            </div>
+            <!--<p> будут строками таблицы, span - текст, иконку псевдо элементоv от span-->
+            <p><span>розовый фильтр</span></p>
+            <p><span>смайлики</span></p>
+            <p><span>комментарии</span></p>
+          </div>
+          <div class="slider">
+            <div>
+              <h3>Стандарт</h3>
+              <span>3,99 USD</span>
+            </div>
+            <!--<p> будут строками таблицы, span - текст, иконку псевдо элементоv от span-->
+            <p><span>розовый фильтр</span></p>
+            <p><span>смайлики</span></p>
+            <p><span>комментарии</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page-main__contacts contacts">
+      <div class="contacts__title">
+        <p>Остались вопросы?</p>
+        <p>Свяжитесь с нами!</p>
+      </div>
+      <div class="contacts__item">
+        <h3>Звоните:</h3>
+        <p>+7 (812) 555-66-66</p>
+      </div>
+      <div class="contacts__item">
+        <h3>Пишите:</h3>
+        <p>mail@htmlacademy.ru</p>
+      </div>
+      <div class="contacts__item">
+        <h3>Приезжайте в гости:</h3>
+        <p>ул. Большая Конюшенная, 19/8</p>
+      </div>
+      <img class="contacts__map" src="#" alt="">
+    </section>
+  </main>
+</body>
 </html>
