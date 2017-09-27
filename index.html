@@ -7,14 +7,21 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
+<body class="page">
   <header class="page-header">
-    <a class="logo">
-      <img class="logo__image" src="http://placehold.it/150x100" alt="Пинк">
+   <div class="page-header__container">
+     <a class="logo" href="#">
+      <img class="logo__image" src="../img/logo-pink-white-mobile.svg" width="75" height="23" alt="Пинк">
     </a>
-    <button class="page-header__menu-toggle"></button>
-    <nav class="main-nav-hidden">
-      <ul class="main-nav-hidden__list list">
+    <a class="burger-btn" href="#">
+      <img class="burder-btn__image" src="../img/icon-menu-burger.svg" width="50" height="25">
+    </a>
+    <a class="cross-btn visually-hidden" href="#">
+      <img class="cross-btn__image" src="../img/icon-menu-cross.svg" width="24" height="24">
+    </a>
+   </div>
+    <nav class="main-nav list">
+      <ul class="main-nav__list list">
         <li class="list__item">
           <a href="index.html">Главная</a>
         </li>
