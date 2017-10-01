@@ -2,136 +2,146 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <title>PINK form</title>
+  <meta charset="UTF-8">
+  <title>PINK form</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
+<body class="page">
+  <header class="page-header page-header--form-page">
+    <nav class="main-nav">
+      <ul class="main-nav__list list">
+        <li class="list__header">
+          <a class="logo" href="#">
+            <img class="logo__image" src="../img/logo-pink-white-mobile.svg" width="75" height="23" alt="Пинк">
+          </a>
+          <a class="burger-btn visually-hidden" href="#">
+            <img class="burder-btn__image" src="../img/icon-menu-burger.svg" width="50" height="25">
+          </a>
+          <a class="cross-btn" href="#">
+              <img class="cross-btn__image" src="../img/icon-menu-cross.svg" width="24" height="24">
+          </a>
+        </li>
+        <li class="list__item list__item--hidden">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="list__item list__item--hidden">
+          <a href="photo.html">Фотографии</a>
+        </li>
+        <li class="list__item list__item--hidden">
+          <a href="form.html">Конкурс</a>
+        </li>
+        <li class="list__item list__item--hidden">
+          <a href="https://htmlacademy.ru/">hmtl academy</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="page-header__slide page-header__slide--form-page">
+      <h2 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+    </div>
+  </header>
+  <main class="form">
+    <form action="https://htmlacademy.ru/">
+      <p>Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+      <fieldset>
+        <label for="surname">
+          фамилия:
+          <input type="text" placeholder="Укажите фамилию *">
+        </label>
+        <label for="name">
+          имя:
+          <input type="text" placeholder="Введите ваше имя *">
+        </label>
+        <label for="patronymic">
+          отчество:
+          <input type="text" placeholder="ну и отчество тоже *">
+        </label>
+      </fieldset>
 
-<body>
-    <header class="page-header">
-        <a class="logo">
-            <img class="logo__image" src="../380147-pink/img/logo-pink-white-mobile.svg" alt="Пинк">
+      <fieldset>
+        <legend>Ваши безбашенные достижения</legend>
+        <label for="item1">
+          Сделал селфи с акулой
+          <input type="checkbox" id="item1" checked>
+        </label>
+        <label for="item2">
+          Обгорел на пляжу
+          <input type="checkbox" id="item2" checked>
+        </label>
+        <label for="item3">
+          Видел Чака Норриса
+          <input type="checkbox" id="item3">
+        </label>
+        <label for="item4">
+          Накупил сувениров
+          <input type="checkbox" id="item4">
+        </label>
+        <label for="item5">
+          Удержал башню
+          <input type="checkbox" id="item5" checked>
+        </label>
+        <label for="item6">
+          Разгромил отель
+          <input type="checkbox" id="item6">
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="tel">
+          Номер телефона
+          <input type="tel" placeholder="Номер, пожалуйста" id="tel">
+        </label>
+        <label for="email">
+          Адрес почты
+          <input type="email" placeholder="Введите почту*" id="email">
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>С каким приложением путешествовали?</legend>
+        <label for="ios">
+          Pink для OS
+          <input type="radio" id="ios" name="aplication" checked>
+        </label>
+        <label for="android">
+          Pink для Android
+          <input type="radio" id="android" name="aplication">
+        </label>
+        <label for="win-phone">
+          Windows Phone
+          <input type="radio" id="win-phone" name="aplication">
+        </label>
+      </fieldset>
+      <label for="textarea">
+      <fieldset>
+        <legend>Опишите свои эмоции</legend>
+        <textarea name="textarea" id="textarea" cols="30" rows="10">
+          Можно прям в красках, не стесняясь в выражениях
+        </textarea>
+      </fieldset>
+      </label>
+      <input type="submit" value="ОТПРАВИТЬ ФОРМУ">
+      <p>* - обязательные поля</p>
+    </form>
+  </main>
+  <footer class="page-main__footer footer">
+    <a class="logo-footer">
+            <img class="logo-footer__image" src="../img/logo-pink-blue-mobile.svg" alt="Пинк">
         </a>
-        <a class="page-header__menu-toggle" href="../380147-pink/img/icon-menu-burger.svg"></a>
-        <nav class="main-nav-hidden">
-            <ul class="main-nav-hidden__list list">
-                <li class="list__item">
-                    <a href="index.html">Главная</a>
-                </li>
-                <li class="list__item">
-                    <a href="photo.html">Фотографии</a>
-                </li>
-                <li class="list__item">
-                    <a href="#">Конкурс</a>
-                </li>
-                <li class="list__item">
-                    <a href="https://htmlacademy.ru/">html academy</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main class="page-main">
-        <div class="page-main__intro intro">
-            <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
-        </div>
-        <form action="https://htmlacademy.ru/">
-            <p>Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-            <fieldset>
-                <label for="surname">
-                    фамилия:
-                    <input type="text" placeholder="Укажите фамилию *">
-                </label>
-                <label for="name">
-                    имя:
-                    <input type="text" placeholder="Введите ваше имя *">
-                </label>
-                <label for="patronymic">
-                    отчество:
-                    <input type="text" placeholder="ну и отчество тоже *">
-                </label>
-            </fieldset>
-
-            <fieldset>
-                <p>Ваши безбашенные достижения</p>
-                <label for="item1">
-                    Сделал селфи с акулой
-                    <input type="checkbox" id="item1" checked>
-                </label>
-                <label for="item2">
-                    Обгорел на пляжу
-                    <input type="checkbox" id="item2" checked>
-                </label>
-                <label for="item3">
-                    Видел Чака Норриса
-                    <input type="checkbox" id="item3">
-                </label>
-                <label for="item4">
-                    Накупил сувениров
-                    <input type="checkbox" id="item4">
-                </label>
-                <label for="item5">
-                    Удержал башню
-                    <input type="checkbox" id="item5" checked>
-                </label>
-                <label for="item6">
-                    Разгромил отель
-                    <input type="checkbox" id="item6">
-                </label>
-            </fieldset>
-
-            <fieldset>
-                <label for="tel">
-                    Номер телефона
-                    <input type="tel" id="tel">
-                </label>
-                <label for="email">
-                    Адрес почты
-                    <input type="email" id="email">
-                </label>
-            </fieldset>
-
-            <fieldset>
-                <legend>С каким приложением путешествовали?</legend>
-                <label for="ios">
-                    Pink для OS
-                    <input type="radio" id="ios" name="aplication" checked>
-                </label>
-                <label for="android">
-                    Pink для Android
-                    <input type="radio" id="android" name="aplication">
-                </label>
-                <label for="win-phone">
-                    Windows Phone
-                    <input type="radio" id="win-phone" name="aplication">
-                </label>
-            </fieldset>
-            <label for="textarea">
-                <textarea name="textarea" id="textarea" cols="30" rows="10">
-                    Можно прям в красках, не стесняясь в выражениях
-                </textarea>
-            </label>
-            <input type="submit">
-            <p>* - обязательные поля</p>
-        </form>
-    </main>
-    <footer class="page-main__footer footer">
-        <a class="logo">
-            <img class="logo__image" src="http://placehold.it/150x100" alt="Пинк">
-        </a>
-        <ul class="footer__social-btn social-btn">
-            <li class="social-btn__item">
-                <a href="#"><span class="visualli-hidden">twitter</span></a>
-            </li>
-            <li class="social-btn__item">
-                <a href="#"><span class="visualli-hidden">facebook</span></a>
-            </li>
-            <li class="social-btn__item">
-                <a href="#"><span class="visualli-hidden">play</span></a>
-            </li>
-        </ul>
-        <p class="footer__copyright">
-            Разработано <img src="" alt="HTML Academy">
-        </p>
-    </footer>
+    <ul class="footer__social-btn social-btn">
+      <li class="social-btn__item">
+        <a href="#"><img src="../img/icon-twitter.svg" alt="Twitter"></a>
+      </li>
+      <li class="social-btn__item">
+        <a href="#"><img src="../img/icon-facebook.svg" alt="Twitter"></a>
+      </li>
+      <li class="social-btn__item">
+        <a href="#"><img src="../img/icon-youtube.svg" alt="Twitter"></a>
+      </li>
+    </ul>
+    <p class="footer__copyright">
+      Разработано <img src="../img/logo-htmlacademy.svg" alt="HTML Academy">
+    </p>
+  </footer>
 </body>
 
 </html>
