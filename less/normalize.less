@@ -7,10 +7,22 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
 }
 
 //  Remove default margin.
 body { margin: 0 }
+
+a {
+  
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 
 // HTML5 display definitions ==========================================================================
 //  * Correct `block` display not defined for any HTML5 element in IE 8/9.
@@ -64,6 +76,7 @@ a {
 	&:hover {
 		outline: 0;
 	}
+    text-decoration: none;
 }
 
 // Text-level semantics ==========================================================================
@@ -109,7 +122,7 @@ sub { bottom: -0.25em; }
 
 // Embedded content ==========================================================================
 //  * Remove border when inside `a` element in IE 8/9/10.
-img { border: 0; }
+img { border: 0; max-width: 100%;}
 
 //  * Correct overflow not hidden in IE 9/10/11.
 svg:not(:root) { overflow: hidden; }
