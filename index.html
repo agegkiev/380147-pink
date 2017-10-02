@@ -4,80 +4,89 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
+<body class="page">
   <header class="page-header">
-    <a class="logo">
-      <img class="logo__image" src="http://placehold.it/150x100" alt="Пинк">
-    </a>
-    <button class="page-header__menu-toggle"></button>
-    <nav class="main-nav-hidden">
-      <ul class="main-nav-hidden__list list">
-        <li class="list__item">
-          <a href="index.html">Главная</a>
+    <nav class="main-nav">
+      <ul class="main-nav__list list">
+        <li class="list__header">
+          <a class="logo" href="#">
+            <img class="logo__image" src="../img/logo-pink-white-mobile.svg" width="75" height="23" alt="Пинк">
+          </a>
+          <a class="burger-btn visually-hidden" href="#">
+            <img class="burder-btn__image" src="../img/icon-menu-burger.svg" width="50" height="25">
+          </a>
+          <a class="cross-btn" href="#">
+              <img class="cross-btn__image" src="../img/icon-menu-cross.svg" width="24" height="24">
+          </a>
         </li>
-        <li class="list__item">
-          <a href="photo.html">Фотографии</a>
+        <li class="list__item list__item--hidden">
+          <a class="list__item-ancor" href="index.html">Главная</a>
         </li>
-        <li class="list__item">
-          <a href="#">Конкурс</a>
+        <li class="list__item list__item--hidden">
+          <a class="list__item-ancor" href="photo.html">Фотографии</a>
         </li>
-        <li class="list__item">
-          <a href="https://htmlacademy.ru/">html academy</a>
+        <li class="list__item list__item--hidden">
+          <a class="list__item-ancor" href="form.html">Конкурс</a>
+        </li>
+        <li class="list__item list__item--hidden">
+          <a class="list__item-ancor" href="https://htmlacademy.ru/">html academy</a>
         </li>
       </ul>
     </nav>
+    <div class="page-header__slide">
+      <img src="../img/iphone-hand-mobile@1x.png" width="258" height="286" alt="">
+    </div>
   </header>
   <main class="page-main">
     <section class="page-main__intro intro">
-      <div class="intro__slide phone">
-        <img class="phone__hand" src="#" alt="">
-        <img class="phone__phone-image" src="#" alt="">
-      </div>
-      <div class="intro__links link">
+      <div class="intro__links">
         <a class="button" href="#">Скачать приложение</a>
-        <ul class="link__container">
-          <li>
+        <ul class="links">
+          <li class="links__item">
             <a class="link__apple-btn" href="#">
-              <span class="visually-hidden">Apple</span>
+              <img src="../img/logo-apple.svg" alt="Apple">
             </a>
           </li>
-          <li>
+          <li class="links__item">
             <a class="link__android-btn" href="#">
-              <span class="visually-hidden">Android</span>
+              <img src="../img/logo-android.svg" alt="Android">
             </a>
           </li>
-          <li>
+          <li class="links__item">
             <a class="link__microsoft-btn" href="#">
-              <span class="visually-hidden">Microsoft</span>
+              <img src="../img/logo-microsoft.svg" alt="MIcrosoft">
             </a>
           </li>
         </ul>
-        <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="intro__paragraph">
+          <p class="intro__paragraph-within">Доступно для iPhone, iPad, Android,</p>
+          <p class="intro__paragraph-within">Windows Phone, OS X, Windows 8</p>
+        </div>
       </div>
     </section>
+
     <section class="page-main__benefits benefits">
       <div class="benefits__title">
-        <p>Устали от серости мегаполиса?</p>
-        <p>Нам есть, что вам предложить!</p>
+        <p class="benefits__title-paragraph">Устали от серости мегаполиса?</p>
+        <p class="benefits__title-paragraph benefits__title--paragraph">Нам есть, что вам предложить!</p>
       </div>
       <div class="benefits__item">
-        <h3>Поднимает настроение</h3>
-        <p>Приложенеи позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <h3 class="benefits__item-title">Поднимает настроение</h3>
+        <p class="benefits__item-paragraph">Приложенеи позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
       </div>
       <div class="benefits__item">
-        <h3>Меняет мир вокруг</h3>
-        <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        <h3 class="benefits__item-title">Меняет мир вокруг</h3>
+        <p class="benefits__item-paragraph">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
       </div>
       <div class="benefits__item">
-        <h3>Заводит новых друзей</h3>
-        <p>Ставьте лайки, комментируйте, делитесь фотографями с друзьями и заводите новых</p>
+        <h3 class="benefits__item-title">Заводит новых друзей</h3>
+        <p class="benefits__item-paragraph">Ставьте лайки, комментируйте, делитесь фотографями с друзьями и заводите новых</p>
       </div>
       <div class="phone">
-        <img class="phone__hand" src="#" alt="">
-        <img class="phone__phone-image" src="#" alt="">
-        <p class="phone__smile">Всем привет</p>
+        <img class="phone__hand" src="../img/iphone-screen-mobile@1x.png" alt="">
       </div>
     </section>
 
@@ -93,18 +102,18 @@
       <div class="carousel__inner">
         <div class="carousel__sliders">
           <div class="slider">
-            <h3>Николай Петров</h3>
-            <p>«Это приложение перевернуло мой мир и повзолило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            <h3 class="page-main__reviews-title">Николай Петров</h3>
+            <p class="page-main__reviews-paragraph">«Это приложение перевернуло мой мир и повзолило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </p>
           </div>
           <div class="slider">
-            <h3>Николай Петров</h3>
-            <p>«Это приложение перевернуло мой мир и повзолило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            <h3 class="page-main__reviews-title">Николай Петров</h3>
+            <p class="page-main__reviews-paragraph">«Это приложение перевернуло мой мир и повзолило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </p>
           </div>
           <div class="slider">
-            <h3>Николай Петров</h3>
-            <p>«Это приложение перевернуло мой мир и повзолило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            <h3 class="page-main__reviews-title">Николай Петров</h3>
+            <p class="page-main__reviews-paragraph">«Это приложение перевернуло мой мир и повзолило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </p>
           </div>
         </div>
@@ -122,59 +131,81 @@
       </div>
       <div class="carousel__inner">
         <div class="carousel__sliders">
-          <!--Планирую таблицу через css сделать-->
           <div class="slider">
-            <div>
-              <h3>Стандарт</h3>
-              <span>3,99 USD</span>
-            </div>
-            <!--<p> будут строками таблицы, span - текст, иконку псевдо элементоv от span-->
-            <p><span>розовый фильтр</span></p>
-            <p><span>смайлики</span></p>
-            <p><span>комментарии</span></p>
+            <table>
+              <tr>
+                <th class="page-main__price-table-head">
+                  <h3 class="page-main__price-title">Стандарт</h3><span>3,99 USD</span></th>
+              </tr>
+              <tr>
+                <td class="page-main__price-table-row "><span>розовый фильтр</span></td>
+              </tr>
+              <tr>
+                <td class="page-main__price-table-row "><span>смайлики</span></td>
+              </tr>
+              <tr>
+                <td class="page-main__price-table-row "><span>комментарии</span></td>
+              </tr>
+            </table>
           </div>
-          <div class="slider--hit">
-            <div>
-              <h3>Стандарт</h3>
-              <span>3,99 USD</span>
-            </div>
-            <!--<p> будут строками таблицы, span - текст, иконку псевдо элементоv от span-->
-            <p><span>розовый фильтр</span></p>
-            <p><span>смайлики</span></p>
-            <p><span>комментарии</span></p>
+          <div class="slider slider--hit">
+            <table>
+              <tr>
+                <th class="page-main__price-table-head">
+                  <h3 class="page-main__price-title">Стандарт</h3><span>3,99 USD</span></th>
+              </tr>
+              <tr>
+                <td class="page-main__price-table-row "><span>розовый фильтр</span></td>
+              </tr>
+              <tr>
+                <td class="page-main__price-table-row "><span>смайлики</span></td>
+              </tr>
+              <tr>
+                <td class="page-main__price-table-row "><span>комментарии</span></td>
+              </tr>
+            </table>
           </div>
           <div class="slider">
-            <div>
-              <h3>Стандарт</h3>
-              <span>3,99 USD</span>
-            </div>
-            <!--<p> будут строками таблицы, span - текст, иконку псевдо элементоv от span-->
-            <p><span>розовый фильтр</span></p>
-            <p><span>смайлики</span></p>
-            <p><span>комментарии</span></p>
+            <table>
+              <tr>
+                <th class="page-main__price-table-head">
+                  <h3 class="page-main__price-title">Стандарт</h3><span>3,99 USD</span></th>
+              </tr>
+              <tr>
+                <td class="page-main__price-table-row "><span>розовый фильтр</span></td>
+              </tr>
+              <tr>
+                <td class="page-main__price-table-row "><span>смайлики</span></td>
+              </tr>
+              <tr>
+                <td class="page-main__price-table-row "><span>комментарии</span></td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
     </section>
+
     <section class="page-main__contacts contacts">
       <div class="contacts__title">
         <p>Остались вопросы?</p>
         <p>Свяжитесь с нами!</p>
       </div>
       <div class="contacts__item">
-        <h3>Звоните:</h3>
-        <p>+7 (812) 555-66-66</p>
+        <h3 class="contacts__item-title">Звоните:</h3>
+        <p class="contacts__item-paragraph">+7 (812) 555-66-66</p>
       </div>
       <div class="contacts__item">
-        <h3>Пишите:</h3>
-        <p>mail@htmlacademy.ru</p>
+        <h3 class="contacts__item-title">Пишите:</h3>
+        <p class="contacts__item-paragraph">mail@htmlacademy.ru</p>
       </div>
       <div class="contacts__item">
-        <h3>Приезжайте в гости:</h3>
-        <p>ул. Большая Конюшенная, 19/8</p>
+        <h3 class="contacts__item-title">Приезжайте в гости:</h3>
+        <p class="contacts__item-paragraph">ул. Большая Конюшенная, 19/8</p>
       </div>
-      <img class="contacts__map" src="#" alt="">
+      <img class="contacts__map" src="../img/bg-map-mobile@1x.png" alt="">
     </section>
   </main>
 </body>
+
 </html>
