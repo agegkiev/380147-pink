@@ -1,0 +1,123 @@
+.carousel {
+  position: relative;
+  top: -45px;
+
+  width: 320px;
+  min-height: 380px;
+
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 25px;
+}
+
+.carousel__controls label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.carousel__controls {
+  position: absolute;
+  left: 130px;
+  bottom: 60px;
+}
+
+.btn-1:checked ~ .carousel__controls label[for="btn-1"],
+.btn-2:checked ~ .carousel__controls label[for="btn-2"],
+.btn-3:checked ~ .carousel__controls label[for="btn-3"] {
+  background-position: 50% 50%;
+  background-size: 10px;
+  background-color: red;
+}
+
+.btn-1:checked ~ .carousel__inner .carousel__sliders {
+  transform: translate(0);
+  transition: 0.7s;
+}
+
+.btn-2:checked ~ .carousel__inner .carousel__sliders {
+  transform: translate(-280px);
+  transition: 0.7s;
+}
+
+.btn-3:checked ~ .carousel__inner .carousel__sliders {
+  transform: translate(-560px);
+  transition: 0.7s;
+}
+
+.carousel__sliders {
+  width: 300%;
+}
+
+.carousel__inner {
+  overflow: hidden;
+  width: 280px;
+}
+
+.btn-4:checked ~ .carousel--price__controls label[for="btn-4"],
+.btn-5:checked ~ .carousel--price__controls label[for="btn-5"],
+.btn-6:checked ~ .carousel--price__controls label[for="btn-6"] {
+  background-position: 50% 50%;
+  background-size: 10px;
+  background-color: red;
+}
+
+.btn-4:checked ~ .carousel--price__inner .carousel--price__sliders {
+  transform: translate(20px);
+  transition: 0.7s;
+}
+
+.btn-5:checked ~ .carousel--price__inner .carousel--price__sliders {
+  transform: translate(-260px);
+  transition: 0.7s;
+}
+
+.btn-6:checked ~ .carousel--price__inner .carousel--price__sliders {
+  transform: translate(-540px);
+  transition: 0.7s;
+}
+
+.carousel--price {
+  position: relative;
+
+  width: 320px;
+  min-height: 400px;
+
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 15px;
+  padding-bottom: 80px;
+}
+
+.carousel--price__controls label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 6px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px red;
+  cursor: pointer;
+}
+
+.carousel--price__controls {
+  position: absolute;
+  left: 123px;
+  bottom: 45px;
+}
+
+.carousel--price__sliders {
+  width: 300%;
+}
+
+.carousel--price__inner {
+  overflow: hidden;
+  width: 320px;
+}

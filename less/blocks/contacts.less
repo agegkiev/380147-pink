@@ -3,18 +3,61 @@
   font-style: normal;
   font-weight: 300;
   color: @midnight;
+  text-align: center;
+  min-height: 610px;
+  position: relative;
+  background-image: url("../img/Layer153.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
 }
 
 .contacts__title {
   font-size: 24px;
+  line-height: 6px;
+  margin-bottom: 44px;
 }
 
 .contacts__item-title {
   font-weight: 700;
   font-size: 18px;
+  margin: 0;
 }
 
 .contacts__item-paragraph {
   color: #d22856;
   font-size: 24px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.contacts__item {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.contacts__container::after {
+  content: " ";
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  border-left: 160px solid transparent;
+  border-right: 160px solid transparent;
+  border-top: 30px solid white;
+}
+
+.contacts__container::before {
+  content: url(../img/icon-map-marker.svg);
+  position: absolute;
+  bottom: -135px;
+  left: 144px;
+}
+
+.contacts__container {
+  height: 410px;  
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  padding-top: 26px;
 }
