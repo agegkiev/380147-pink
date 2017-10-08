@@ -1,0 +1,47 @@
+.icon-cross {
+  width: 15px;
+  height: 15px;
+  position: relative;
+
+  &::before {
+    content: " ";
+    width: 3px;
+    height: 35px;
+    position: absolute;
+    right: 14px;
+    top: -8px;
+    background-color: #f25b26;
+    transform: rotate(45deg);
+  }
+  &::after {
+    content: " ";
+    width: 3px;
+    height: 35px;
+    position: absolute;
+    right: 14px;
+    top: -8px;
+    background-color: #f25b26;
+    transform: rotate(-45deg);
+  }
+}
+
+.icon-cross--header {
+  width: 25px;
+  height: 25px;
+
+  &::before {
+    width: 5px;
+    height: 30px;
+    left: 10px;
+    top: -2px;
+    background-color: white;
+  }
+  
+  &::after {
+    width: 5px;
+    height: 30px;
+    left: 10px;
+    top: -2px;
+    background-color: white;
+  }
+}
