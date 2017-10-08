@@ -2,3 +2,28 @@
   width: 75px;
   height: 23px;
 }
+
+.logo__image-tablet {
+  width: 147px;
+  height: 40px;
+}
+
+@media (min-width: 660px) {
+  .logo {
+    width: 147px;
+    height: 40px;
+  }
+  
+  .logo__image {
+    display: none;
+  }
+}
+
+@media (max-width: 660px) {
+  .logo__image-tablet {
+    display: none;
+  }
+  .logo__image {
+    display: block;
+  }
+}

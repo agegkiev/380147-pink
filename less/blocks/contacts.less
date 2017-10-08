@@ -4,8 +4,13 @@
   font-weight: 300;
   color: @midnight;
   text-align: center;
+
   min-height: 610px;
+  width: 320px;
+
   position: relative;
+  margin: 0 auto;
+
   background-image: url("../img/Layer153.png");
   background-repeat: no-repeat;
   background-position: 50% 100%;
@@ -31,7 +36,7 @@
 }
 
 .contacts__item {
-  width: 280px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -55,9 +60,42 @@
 }
 
 .contacts__container {
-  height: 410px;
+  min-height: 410px;
+  margin: 0 auto;
   position: relative;
-  z-index: 2;
   background-color: white;
   padding-top: 29px;
+  outline: 1px solid red;
+}
+
+@media (min-width: 660px) {
+  .contacts {
+    width: 100%;
+    background-size: 100%;
+    min-height: 780px;
+  }
+  .contacts__title {
+    font-size: 40px;
+  }
+
+  .contacts__item-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__item-paragraph {
+    width: 220px;
+  }
+
+  .contacts__container::after {
+    border-left: 330px solid transparent;
+    border-right: 330px solid transparent;
+    border-top: 67px solid white;
+    bottom: -67px;
+  }
+
+  .contacts__container::before {
+    left: 310px;
+    bottom: -217px;
+  }
 }
