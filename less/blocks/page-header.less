@@ -24,6 +24,16 @@
 
   min-width: 320px;
   min-height: 666px;
+  
+  .oline;
+}
+
+.page-header__title {
+  color: white;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
 }
 
 .page-header__slide--photo-page {
@@ -41,8 +51,8 @@
 }
 
 .page-header--form-page {
-  background-position: -193px 253px;
-  background-size: 221%;
+  background-position: 0 0, 0 0, 50% 50%;
+  background-size: 0, 0, 100%;
 }
 
 @media (min-width: 660px) {
@@ -63,7 +73,15 @@
   
   .page-header--photo-page {
     background-size: 0, 0, 100%;
-  }  
+  }
+  
+  .page-header--form-page {
+    background-size: 0, 0, 100%;    
+  }
+  
+  .page-header__title {
+    font-size: 50px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -83,5 +101,9 @@
     background-size: 19%,
       59%,
       contain;
+  }
+  
+  .page-header--form-page {
+    background-size: 0, 0, 100%;
   }
 }
