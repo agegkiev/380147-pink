@@ -8,10 +8,34 @@
   height: 40px;
 }
 
+@media (min-width: 320px) {
+  .logo {
+    display: block;
+  }
+  
+  .logo__image {
+    display: block;
+  }
+  
+  .logo__image-tablet {
+    display: none;
+  }
+}
+
 @media (min-width: 660px) {
   .logo {
     width: 147px;
     height: 40px;
+  }
+  
+  .logo__image-tablet {
+    display: block;
+  }
+}
+
+@media (min-width: 660px) {
+  .logo__image-tablet {
+    display: block;
   }
   
   .logo__image {
@@ -19,11 +43,8 @@
   }
 }
 
-@media (max-width: 660px) {
-  .logo__image-tablet {
+@media (min-width: 1200px) {
+  .logo {
     display: none;
-  }
-  .logo__image {
-    display: block;
   }
 }
