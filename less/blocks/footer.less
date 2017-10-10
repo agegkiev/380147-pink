@@ -1,18 +1,19 @@
 .footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
-@media (max-width: 660px) {
+@media (min-width: 660px) {
   .footer {
-    display: none;
+    flex-direction: row;
   }
 }
 
 @media (min-width: 1200px) {
   .footer {
     min-height: 200px;
+    flex-direction: row;
   }
 }
