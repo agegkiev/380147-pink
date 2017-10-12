@@ -1,22 +1,29 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  position: relative;
-
-  min-width: 320px;
+  min-height: 670px;
+  min-width: 280px;
 
   background-color: @midnight;
-  background-image: url("../img/Layer155.svg"),
-  url("../img/iphone-5-in-hand-png.svg"),
-  url("../../img/bg-back-mobile@1x.jpg");
-  background-position: 50% 59%,
-  50% 64%,
-  50% 50%;
-  background-size: 35%, 107%, cover;
-  background-repeat: no-repeat;
 
-  outline: 1px dotted yellow;
+  outline: 2px dotted red;
+}
+
+.page-header__slider {
+  min-height: 392px;
+  background-image: url("../img/iphone-hand-mobile@1x.png"),
+    url("../img/bg-back-mobile@1x.jpg");
+  background-size: 256px 286px,
+    700px 462px;
+  background-repeat: no-repeat;
+  background-position: 0 100%,
+    50% 100%;
+  outline: 1px solid green;
+}
+
+.page-header__social-btn {
+  min-height: 270px;
+  outline: 1px solid yellow;
 }
 
 //.page-header__slide {

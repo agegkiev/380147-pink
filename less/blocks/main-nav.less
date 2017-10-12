@@ -6,6 +6,46 @@
   text-transform: uppercase;
 }
 
-.main-nav__item-head--open {
-  display: none;
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav__ancor {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 62px;
+  box-shadow: inset 0 1px 0 0 #485461,
+    0 1px 0 0 #000000;
+}
+
+.main-nav__ancor:hover {
+  box-shadow: 0 1px 0 0 #485461,
+    inset 0 -1px 0 0 #000000;
+}
+
+.main-nav__ancor:active {
+  box-shadow: 0 1px 0 0 #485461,
+    inset 0 -1px 0 0 #000000;
+}
+
+.main-nav__item {
+  list-style: none;
+  margin-bottom: 2px;
+}
+
+.main-nav__item-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+//  outline: 3px dotted green;
+  min-height: 69px;
+  min-width: 280px;
+  padding: 0 20px;
+
+  box-shadow: inset 0 1px 0 0 #485461,
+    0 1px 0 0 #000000;
 }
