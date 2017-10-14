@@ -1,22 +1,17 @@
 .carousel {
+  position: relative;
   width: 320px;
-  min-height: 380px;
-
-  background-color: #ffffff;
+  min-height: 265px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 25px;
-
-  background-image: linear-gradient(-5deg, #f2f2f2 30px, white 30px);
-  margin: 0 auto;
 }
 
 .carousel__controls label {
   display: inline-block;
   width: 10px;
   height: 10px;
-  margin: 0 5px;
+  margin: 0 5.5px;
   border-radius: 50%;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
   cursor: pointer;
@@ -24,8 +19,8 @@
 
 .carousel__controls {
   position: absolute;
-  left: 130px;
-  bottom: 60px;
+  left: 38.5%;
+  bottom: 0;
 }
 
 .btn-1:checked ~ .carousel__controls label[for="btn-1"],
@@ -86,17 +81,12 @@
 .carousel--price {
   position: relative;
 
-  width: 320px;
-  min-height: 400px;
+  min-width: 320px;
+  height: 340px;
 
   display: flex;
   justify-content: center;
   align-items: flex-start;
-
-  padding-top: 15px;
-  padding-bottom: 80px;
-
-  margin: 0 auto;
 }
 
 .carousel--price__controls label {
@@ -112,7 +102,7 @@
 .carousel--price__controls {
   position: absolute;
   left: 123px;
-  bottom: 45px;
+  bottom: 0;
 }
 
 .carousel--price__sliders {
@@ -122,7 +112,6 @@
 .carousel--price__inner {
   overflow: hidden;
   width: 320px;
-  background-color: #ffffff;
 }
 
 @media (min-width: 660px) {

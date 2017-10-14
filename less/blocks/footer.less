@@ -5,15 +5,23 @@
   align-items: center;
 }
 
-//@media (min-width: 660px) {
-//  .footer {
-//    flex-direction: row;
-//  }
-//}
-//
-//@media (min-width: 1200px) {
-//  .footer {
-//    min-height: 200px;
-//    flex-direction: row;
-//  }
-//}
+.footer__copyright {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 659px) {
+  .footer {
+    display: none;
+  }
+}
+
+@media (min-width: 660px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 130px;
+    padding: 0 20px;
+  }
+}

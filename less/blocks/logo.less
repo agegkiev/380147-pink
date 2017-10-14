@@ -3,48 +3,32 @@
   height: 22px;
 }
 
-.logo__image-tablet {
-  width: 147px;
-  height: 40px;
+@media (min-width: 320px) and (max-width: 659px) {
+  .logo--tablet {
+    display: none;
+  }
+
+  .logo--desktop {
+    display: none;
+  }
 }
 
-//@media (min-width: 320px) {
-//  .logo {
-//    display: block;
-//  }
-//
-//  .logo__image {
-//    display: block;
-//  }
-//
-//  .logo__image-tablet {
-//    display: none;
-//  }
-//}
-//
-//@media (min-width: 660px) {
-//  .logo {
-//    width: 147px;
-//    height: 40px;
-//  }
-//
-//  .logo__image-tablet {
-//    display: block;
-//  }
-//}
-//
-//@media (min-width: 660px) {
-//  .logo__image-tablet {
-//    display: block;
-//  }
-//
-//  .logo__image {
-//    display: none;
-//  }
-//}
-//
-//@media (min-width: 1200px) {
-//  .logo {
-//    display: none;
-//  }
-//}
+@media (min-width: 660px) and (max-width: 1199px) {
+  .logo {
+    display: none;
+  }
+
+  .logo--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo--tablet {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+}

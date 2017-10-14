@@ -14,46 +14,57 @@
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item-head">
           <a class="logo" href="#">
-            <img class="logo__image" src="./img/logo-pink-white-mobile.svg" width="75" height="23" alt="Пинк"></a>
+            <img class="logo__image" src="./img/logo-pink-white-mobile.svg" width="75" height="23" alt="Пинк">
+          </a>
+          <a class="logo--tablet" href="#">
+            <img class="logo__image--tablet" src="./img/logotype-white-tablet.svg.png" width="147" height="40" alt="Пинк">
+          </a>
+          <a class="logo--desktop" href="#">
+            <img class="logo__image--tablet" src="./img/logotype-white-desktop.svg" width="147" height="40" alt="Пинк">
+          </a>
           <a class="icon-burder visually-hidden" href="#">
             <span class="icon-burder__img"></span>
           </a>
           <a class="icon-cross--header" href="#"></a>
         </li>
-        <li class="main-nav__item"><a class="main-nav__ancor" href="index.html">главная</a></li>
-        <li class="main-nav__item"><a class="main-nav__ancor" href="photo.html">фотографии</a></li>
-        <li class="main-nav__item"><a class="main-nav__ancor" href="form.html">конкурс</a></li>
-        <li class="main-nav__item"><a class="main-nav__ancor" href="https:://htmlacademy.ru">html academy</a>
+        <li class="main-nav__item"><a class="main-nav__ancor" href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a class="main-nav__ancor" href="photo.html">Фотографии</a></li>
+        <li class="main-nav__item"><a class="main-nav__ancor" href="form.html">Конкурс</a></li>
+        <li class="main-nav__item"><a class="main-nav__ancor" href="https:://htmlacademy.ru">HTML Academy</a>
         </li>
       </ul>
     </nav>
-    <div class="page-header__slider"></div>
-    <div class="page-header__social-btn">
-        <div class="links__container">
-          <p class="links__title">Взгляните на жизнь иначе!</p>
-          <a class="button" href="#">Скачать приложение</a>
-          <ul class="links__list">
-            <li class="links__item">
-              <a class="link__apple-btn" href="#">
+    <div class="page-header__wrapper">
+      <div class="page-header__container">
+        <div class="page-header__img"></div>
+        <div class="page-header__social-btn">
+          <div class="links__container">
+            <p class="links__title">Взгляните на жизнь иначе!</p>
+            <a class="button" href="#">Скачать приложение</a>
+            <ul class="links__list">
+              <li class="links__item">
+                <a class="link__apple-btn" href="#">
               <img src="./img/logo-apple.svg" alt="Apple">
             </a>
-            </li>
-            <li class="links__item">
-              <a class="link__android-btn" href="#">
+              </li>
+              <li class="links__item">
+                <a class="link__android-btn" href="#">
               <img src="./img/logo-android.svg" alt="Android">
             </a>
-            </li>
-            <li class="links__item">
-              <a class="link__microsoft-btn" href="#">
+              </li>
+              <li class="links__item">
+                <a class="link__microsoft-btn" href="#">
               <img src="./img/logo-microsoft.svg" alt="MIcrosoft">
             </a>
-            </li>
-          </ul>
-          <div class="links__paragraph">
-            <p class="links__paragraph-within">Доступно для iPhone, iPad, Android,</p>
-            <p class="links__paragraph-within">Windows Phone, OS X, Windows 8</p>
+              </li>
+            </ul>
+            <div class="links__paragraph">
+              <p class="links__paragraph-within">Доступно для iPhone, iPad, Android,</p>
+              <p class="links__paragraph-within">Windows Phone, OS X, Windows 8</p>
+            </div>
           </div>
         </div>
+      </div>
     </div>
   </header>
   <main class="page-main">
@@ -98,131 +109,136 @@
       </div>
     </section>
 
-    <section class="carousel">
-      <input class="visually-hidden btn-1" type="radio" id="btn-1" name="toggle" checked>
-      <input class="visually-hidden btn-2" type="radio" id="btn-2" name="toggle">
-      <input class="visually-hidden btn-3" type="radio" id="btn-3" name="toggle">
-      <div class="carousel__controls">
-        <label for="btn-1"></label>
-        <label for="btn-2"></label>
-        <label for="btn-3"></label>
-      </div>
-      <div class="carousel__inner">
-        <div class="carousel__sliders">
-          <div class="slider">
-            <h3 class="slider__reviews-title">Николай Петров</h3>
-            <p class="slider__reviews-paragraph">«Это приложение перевернуло мой мир и повзолило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-            </p>
-          </div>
-          <div class="slider">
-            <h3 class="slider__reviews-title">Николай Петров</h3>
-            <p class="slider__reviews-paragraph">«Это приложение перевернуло мой мир и повзолило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-            </p>
-          </div>
-          <div class="slider">
-            <h3 class="slider__reviews-title">Николай Петров</h3>
-            <p class="slider__reviews-paragraph">«Это приложение перевернуло мой мир и повзолило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-            </p>
+    <div class="container-sliders">
+
+      <section class="carousel">
+        <input class="visually-hidden btn-1" type="radio" id="btn-1" name="toggle" checked>
+        <input class="visually-hidden btn-2" type="radio" id="btn-2" name="toggle">
+        <input class="visually-hidden btn-3" type="radio" id="btn-3" name="toggle">
+        <div class="carousel__controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+        <div class="carousel__inner">
+          <div class="carousel__sliders">
+            <div class="slider">
+              <h3 class="slider__reviews-title">Николай Петров</h3>
+              <p class="slider__reviews-paragraph">«Это приложение перевернуло мой мир и повзолило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </div>
+            <div class="slider">
+              <h3 class="slider__reviews-title">Николай Петров</h3>
+              <p class="slider__reviews-paragraph">«Это приложение перевернуло мой мир и повзолило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </div>
+            <div class="slider">
+              <h3 class="slider__reviews-title">Николай Петров</h3>
+              <p class="slider__reviews-paragraph">«Это приложение перевернуло мой мир и повзолило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="carousel--price">
-      <input class="visually-hidden btn-4" type="radio" id="btn-4" name="toggle-rice">
-      <input class="visually-hidden btn-5" type="radio" id="btn-5" name="toggle-rice" checked>
-      <input class="visually-hidden btn-6" type="radio" id="btn-6" name="toggle-rice">
-      <div class="carousel--price__controls">
-        <label for="btn-4"></label>
-        <label for="btn-5"></label>
-        <label for="btn-6"></label>
-      </div>
-      <div class="carousel--price__inner">
-        <div class="carousel--price__sliders">
-          <div class="slider--price">
-            <table class="slider__table">
-              <tr>
-                <th class="slider__price-table-head">
-                  <h3 class="slider__price-title">База</h3><span c>1,99 USD</span></th>
-              </tr>
-              <tr>
-                <td class="slider__price-table-row "><span>розовый фильтр</span><span class="icon-yes"></span></td>
-              </tr>
-              <tr>
-                <td class="slider__price-table-row "><span>смайлики</span><span class="icon-cross"></span></td>
-              </tr>
-              <tr>
-                <td class="slider__price-table-row "><span>комментарии</span><span class="icon-cross"></span></td>
-              </tr>
-            </table>
-          </div>
-          <div class="slider--price slider--hit">
-            <table class="slider__table">
-              <tr>
-                <th class="slider__price-table-head slider__price-table-head--hit">
-                  <h3 class="slider__price-title">Стандарт</h3><span>3,99 USD</span></th>
-              </tr>
-              <tr>
-                <td class="slider__price-table-row "><span>розовый фильтр</span><span class="icon-yes"></span></td>
-              </tr>
-              <tr>
-                <td class="slider__price-table-row "><span>смайлики</span><span class="icon-yes"></span></td>
-              </tr>
-              <tr>
-                <td class="slider__price-table-row "><span>комментарии</span><span class="icon-cross"></span></td>
-              </tr>
-            </table>
-          </div>
-          <div class="slider--price">
-            <table class="slider__table">
-              <tr>
-                <th class="slider__price-table-head">
-                  <h3 class="slider__price-title">Анлим</h3><span>9,99 USD</span></th>
-              </tr>
-              <tr>
-                <td class="slider__price-table-row "><span>розовый фильтр</span><span class="icon-yes"></span></td>
-              </tr>
-              <tr>
-                <td class="slider__price-table-row "><span>смайлики</span><span class="icon-yes"></span></td>
-              </tr>
-              <tr>
-                <td class="slider__price-table-row "><span>комментарии</span><span class="icon-yes"></span></td>
-              </tr>
-            </table>
+      <section class="carousel--price">
+        <input class="visually-hidden btn-4" type="radio" id="btn-4" name="toggle-rice">
+        <input class="visually-hidden btn-5" type="radio" id="btn-5" name="toggle-rice" checked>
+        <input class="visually-hidden btn-6" type="radio" id="btn-6" name="toggle-rice">
+        <div class="carousel--price__controls">
+          <label for="btn-4"></label>
+          <label for="btn-5"></label>
+          <label for="btn-6"></label>
+        </div>
+        <div class="carousel--price__inner">
+          <div class="carousel--price__sliders">
+            <div class="slider--price">
+              <table class="slider__table">
+                <tr>
+                  <th class="slider__price-table-head">
+                    <h3 class="slider__price-title">База</h3><span c>1,99 USD</span></th>
+                </tr>
+                <tr>
+                  <td class="slider__price-table-row "><span>розовый фильтр</span><span class="icon-yes"></span></td>
+                </tr>
+                <tr>
+                  <td class="slider__price-table-row "><span>смайлики</span><span class="icon-cross"></span></td>
+                </tr>
+                <tr>
+                  <td class="slider__price-table-row "><span>комментарии</span><span class="icon-cross"></span></td>
+                </tr>
+              </table>
+            </div>
+            <div class="slider--price slider--hit">
+              <table class="slider__table">
+                <tr>
+                  <th class="slider__price-table-head slider__price-table-head--hit">
+                    <h3 class="slider__price-title">Стандарт</h3><span>3,99 USD</span></th>
+                </tr>
+                <tr>
+                  <td class="slider__price-table-row "><span>розовый фильтр</span><span class="icon-yes"></span></td>
+                </tr>
+                <tr>
+                  <td class="slider__price-table-row "><span>смайлики</span><span class="icon-yes"></span></td>
+                </tr>
+                <tr>
+                  <td class="slider__price-table-row "><span>комментарии</span><span class="icon-cross"></span></td>
+                </tr>
+              </table>
+            </div>
+            <div class="slider--price">
+              <table class="slider__table">
+                <tr>
+                  <th class="slider__price-table-head">
+                    <h3 class="slider__price-title">Анлим</h3><span>9,99 USD</span></th>
+                </tr>
+                <tr>
+                  <td class="slider__price-table-row "><span>розовый фильтр</span><span class="icon-yes"></span></td>
+                </tr>
+                <tr>
+                  <td class="slider__price-table-row "><span>смайлики</span><span class="icon-yes"></span></td>
+                </tr>
+                <tr>
+                  <td class="slider__price-table-row "><span>комментарии</span><span class="icon-yes"></span></td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="price-table">
-      <table>
-        <tr>
-          <td></td>
-          <th>база<span>1,99 usd</span></th>
-          <th>стандарт<span>3,99 usd</span></th>
-          <th>анлим<span>9,99 usd</span></th>
-        </tr>
-        <tr>
-          <td>Розовый фильтр</td>
-          <td><span class="icon-yes"></span></td>
-          <td><span class="icon-yes"></span></td>
-          <td><span class="icon-yes"></span></td>
-        </tr>
-        <tr>
-          <td>Смайлики</td>
-          <td><span class="icon-cross"></span></td>
-          <td><span class="icon-yes"></span></td>
-          <td><span class="icon-yes"></span></td>
-        </tr>
-        <tr>
-          <td>Комментарии</td>
-          <td><span class="icon-cross"></span></td>
-          <td><span class="icon-cross"></span></td>
-          <td><span class="icon-yes"></span></td>
-        </tr>
-      </table>
-    </section>
+      </section>
 
-    <section class="ontacts">
+      <section class="price-table">
+        <table>
+          <tr>
+            <td></td>
+            <th>база<span>1,99 usd</span></th>
+            <th>стандарт<span>3,99 usd</span></th>
+            <th>анлим<span>9,99 usd</span></th>
+          </tr>
+          <tr>
+            <td>Розовый фильтр</td>
+            <td><span class="icon-yes"></span></td>
+            <td><span class="icon-yes"></span></td>
+            <td><span class="icon-yes"></span></td>
+          </tr>
+          <tr>
+            <td>Смайлики</td>
+            <td><span class="icon-cross"></span></td>
+            <td><span class="icon-yes"></span></td>
+            <td><span class="icon-yes"></span></td>
+          </tr>
+          <tr>
+            <td>Комментарии</td>
+            <td><span class="icon-cross"></span></td>
+            <td><span class="icon-cross"></span></td>
+            <td><span class="icon-yes"></span></td>
+          </tr>
+        </table>
+      </section>
+
+    </div>
+
+    <section class="contacts">
       <div class="contacts__container">
         <div class="contacts__title">
           <p>Остались вопросы?</p>
@@ -245,6 +261,25 @@
       </div>
     </section>
   </main>
+  <footer class="footer">
+    <a class="logo-footer">
+      <img class="logo-footer__image" src="./img/logo-pink-blue-mobile.svg" alt="Пинк">
+    </a>
+    <ul class="footer__social-btn social-btn">
+      <li class="social-btn__item">
+        <a href="#"><img src="./img/icon-twitter.svg" alt="Twitter"></a>
+      </li>
+      <li class="social-btn__item">
+        <a href="#"><img src="./img/icon-facebook.svg" alt="Facebook"></a>
+      </li>
+      <li class="social-btn__item">
+        <a href="#"><img src="./img/icon-youtube.svg" alt="YouTube"></a>
+      </li>
+    </ul>
+    <p class="footer__copyright">
+      Разработано <img src="./img/logo-htmlacademy.svg" alt="HTML Academy">
+    </p>
+  </footer>
 </body>
 
 </html>
