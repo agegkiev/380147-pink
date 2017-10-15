@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__copyright {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 659px) {
+  .footer {
+    display: none;
+  }
+}
+
+@media (min-width: 660px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 130px;
+    padding: 0 20px;
+  }
+}

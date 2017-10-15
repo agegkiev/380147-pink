@@ -1,49 +1,73 @@
 .page-header {
-  background-color: @midnight;
-  min-width: 320px;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-position: 50% 100%;
-  background-size: 221%;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: 1;
-}
-
-.page-header__slide {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  min-width: 320px;
-  min-height: 396px;
+  flex-direction: column;
+  min-height: 670px;
+  min-width: 280px;
+
+  background-color: @midnight;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: 700px 462px;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-.page-header__slide--photo-page {
-  min-height: 170px;
-  align-items: flex-start;
+.page-header__container {
+  min-height: 392px;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 28%;
 }
 
-.page-header__slide--form-page {
-  min-height: 170px;
+.page-header__social-btn {
+  min-height: 270px;
+  background-color: @midnight;
 }
 
-.page-header--photo-page {
-  background-position: -193px 253px;
-  background-size: 221%;
+.page-header__img {
+  width: 320px;
+  min-height: 397px;
 }
 
-.page-header--form-page {
-  background-position: -193px 253px;
-  background-size: 221%;
+@media (min-width: 660px) {
+  .page-header__img {
+    width: 300px;
+    min-height: 620px;
+  }
+
+  .page-header__social-btn {
+    background-color: transparent;
+    width: 300px;
+    min-height: 620px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .page-header__container {
+    min-width: 660px;
+    min-height: 620px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+
+    background-position: 90% 58%,
+      50% -35%;
+  }
 }
 
-.page-header__slide-title {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  color: white;
-  width: 250px;
-  text-align: center;
-  margin: 28px auto;
-  line-height: 30px;
+@media (min-width: 1200px) {
+  .page-header__container {
+    min-height: 745px;
+    min-width: 940px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
 }

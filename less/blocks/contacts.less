@@ -3,18 +3,123 @@
   font-style: normal;
   font-weight: 300;
   color: @midnight;
+  text-align: center;
+
+  min-height: 610px;
+  min-width: 320px;
+
+  position: relative;
+  margin: 0 auto;
+
+  background-image: url("../img/Layer153.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 320px 645px;
 }
 
 .contacts__title {
   font-size: 24px;
+  line-height: 6px;
+  margin-bottom: 44px;
 }
 
 .contacts__item-title {
   font-weight: 700;
   font-size: 18px;
+  margin: 0;
 }
 
 .contacts__item-paragraph {
   color: #d22856;
   font-size: 24px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.contacts__item {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+//.contacts__container::after {
+//  content: " ";
+//  width: 0;
+//  height: 0;
+//  position: absolute;
+//  left: 18%;
+//  bottom: -30px;
+//  border-left: 160px solid transparent;
+//  border-right: 160px solid transparent;
+//  border-top: 30px solid white;
+//}
+
+.contacts__container::before {
+  content: url("../img/icon-map-marker.svg");
+  position: absolute;
+  bottom: -137px;
+  left: 45%;
+}
+
+.contacts__container {
+  min-height: 410px;
+  margin: 0 auto;
+  position: relative;
+  background-color: white;
+  padding-top: 29px;
+}
+
+@media (min-width: 660px) {
+  .contacts {
+    width: 100%;
+    background-size: 100%;
+    min-height: 780px;
+  }
+
+  .contacts__title {
+    font-size: 40px;
+  }
+
+  .contacts__item-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    min-height: 240px;
+  }
+
+  .contacts__item-paragraph {
+    width: 220px;
+  }
+
+  .contacts__item-paragraph:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .contacts__container::after {
+    border-left: 330px solid transparent;
+    border-right: 330px solid transparent;
+    border-top: 67px solid white;
+    content: url("./img/bg-triangle-white-footer.svg");
+    position: absolute;
+    left: 0;
+    bottom: -89px;
+  }
+
+  .contacts__container::before {
+    left: 310px;
+    bottom: -217px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .contacts {
+    min-height: 870px;
+  }
+
+  .contacts__container {
+    min-height: 370px;
+  }
+
+  .contacts__title {
+    font-size: 50px;
+  }
 }
