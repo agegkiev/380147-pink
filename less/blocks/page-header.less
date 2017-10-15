@@ -1,110 +1,77 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
+  min-height: 670px;
+  min-width: 280px;
+
   background-color: @midnight;
 
-  background-image: url("../img/Layer155.svg"),
-    url("../img/iphone-5-in-hand-png.svg"),
-    url("../img/bg-back-mobile@1x.jpg");
-  background-position: 50% 59%,
-    50% 64%,
-    50% 50%;
-  background-size: 35%, 107%, 300%;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: 700px 462px;
   background-repeat: no-repeat;
-
-  position: relative;
+  background-position: center center;
 }
 
-.page-header__slide {
-  display: flex;
-
-  flex-direction: column;
-  justify-content: flex-end;
-  margin: 0 auto;
-  min-height: 666px;
-  min-width: 960px;
-  .oline;
+.page-header__container {
+  min-height: 392px;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 28%;
 }
 
-.page-header__title {
-  color: white;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
+.page-header__social-btn {
+  min-height: 270px;
+  background-color: @midnight;
 }
 
-.page-header__slide--photo-page {
-  min-height: 170px;
-  align-items: flex-start;
-}
-
-.page-header__slide--form-page {
-  min-height: 170px;
-}
-
-.page-header--photo-page {
-  background-position: 0 0, 0 0, 50% 50%;
-  background-size: 0, 0, 100%;
-}
-
-.page-header--form-page {
-  background-position: 0 0, 0 0, 50% 50%;
-  background-size: 0, 0, 100%;
+.page-header__img {
+  width: 320px;
+  min-height: 397px;
 }
 
 @media (min-width: 660px) {
-  .page-header__slide {
-    flex-direction: row-reverse;
-    align-items: center;
+  .page-header__img {
+    width: 300px;
     min-height: 620px;
+    .oline;
   }
 
-  .page-header {
-    background-position: 80% 77.2%,
-      284% 100%,
-      50% 82%;
-    background-size: 29.4%,
-      91%,
-      contain;
+  .page-header__social-btn {
+    background-color: transparent;
+    width: 300px;
+    min-height: 620px;
+
+    display: flex;
+    align-items: center;
+
+    .oline;
   }
 
-  .page-header--photo-page {
-    background-size: 0, 0, 100%;
-    font-size: 50px;
-  }
+  .page-header__container {
+    min-width: 660px;
+    min-height: 620px;
 
-  .page-header--form-page {
-    background-size: 0, 0, 100%;
-  }
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
 
-  .page-header__title {
-    font-size: 50px;
+    background-position: 90% 58%,
+    50% -35%;
   }
 }
 
 @media (min-width: 1200px) {
-  .page-header__slide {
-    flex-direction: row-reverse;
-    align-items: center;
-    min-height: 620px;
-    padding: 0 120px;
+  .page-header__container {
+    min-height: 745px;
+    min-width: 940px;
+    display: flex;
+    justify-content: flex-end;
   }
 
-  .page-header {
-    min-width: 1200px;
-    min-height: 853px;
-    background-position: 73.7% 61%,
-      97% 100%,
-      50% 82%;
-    background-size: 19%,
-      59%,
-      contain;
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-around;
   }
 
-  .page-header--form-page {
-    background-size: 0, 0, 100%;
-  }
-
-  .page-header--photo-page {
-    background-size: 0, 0, 100%;
-  }
 }
