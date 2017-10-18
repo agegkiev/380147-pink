@@ -8,7 +8,12 @@
 .footer__copyright {
   display: flex;
   align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
+
+
 
 @media (max-width: 659px) {
   .footer {
@@ -23,5 +28,30 @@
     align-items: center;
     min-height: 130px;
     padding: 0 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    min-height: 200px;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 960px;
+    padding: 0 10px;
+  }
+
+  .footer__copyright {
+    font-size: 18px;
+  }
+
+  .footer__copyright-image {
+    margin-left: 13px;
   }
 }

@@ -4,13 +4,10 @@
   font-weight: 300;
   color: @midnight;
   text-align: center;
-
   min-height: 610px;
   min-width: 320px;
-
   position: relative;
   margin: 0 auto;
-
   background-image: url("../img/Layer153.png");
   background-repeat: no-repeat;
   background-position: 50% 100%;
@@ -105,17 +102,28 @@
 
   .contacts__container {
     width: 960px;
+    min-height: 360px;
     padding-top: 42px;
+  }
+
+  .contacts__item {
+    padding: 0 20px;
+    margin: 0 auto;
+    min-height: 110px;
+  }
+
+  .contacts__item-title {
+    margin-bottom: 20px;
   }
 
   .contacts__container::after {
     border-left: 600px solid transparent;
     border-right: 600px solid transparent;
-    border-top: 67px solid white;
+    border-top: 110px solid white;
     content: " ";
     position: absolute;
-    left: -10%;
-    bottom: -67px;
+    left: -12%;
+    bottom: -110px;
   }
 
   .contacts__title {
@@ -124,6 +132,7 @@
 
   .contacts__wrapper {
     width: 100%;
+
     background-color: #fff;
   }
 
@@ -131,11 +140,18 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 35px;
-    min-height: 190px;
+    min-height: 0;
   }
 
-  .contacts__item--order {
+  .contacts__item--order-first {
+    order: 1;
+  }
+
+  .contacts__item--order-middle {
+    order: 3;
+  }
+
+  .contacts__item--order-last {
     order: 2;
-    outline: 1px solid red;
   }
 }

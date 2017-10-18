@@ -243,15 +243,15 @@
             <p>Свяжитесь с нами!</p>
           </div>
           <div class="contacts__item-container">
-            <div class="contacts__item">
-              <h3 class="contacts__item-title contacts__item--order-first">Звоните:</h3>
+            <div class="contacts__item contacts__item--order-first">
+              <h3 class="contacts__item-title">Звоните:</h3>
               <p class="contacts__item-paragraph">+7 (812) 555-66-66</p>
             </div>
-            <div class="contacts__item">
+            <div class="contacts__item contacts__item--order-middle">
               <h3 class="contacts__item-title">Пишите:</h3>
               <p class="contacts__item-paragraph">mail@htmlacademy.ru</p>
             </div>
-            <div class="contacts__item contacts__item--order-second">
+            <div class="contacts__item contacts__item--order-last">
               <h3 class="contacts__item-title">Приезжайте в гости:</h3>
               <p class="contacts__item-paragraph">ул. Большая Конюшенная, 19/8</p>
             </div>
@@ -262,23 +262,28 @@
   </main>
 
   <footer class="footer">
+   <div class="footer__container">
     <a class="logo-footer">
       <img class="logo-footer__image" src="./img/logo-pink-blue-mobile.svg" alt="Пинк">
     </a>
-    <ul class="footer__social-btn social-btn">
+    <a class="logo-footer--desktop">
+      <img class="logo-footer__image" src="./img/logotype-blue-desktop.svg" alt="Пинк">
+    </a>
+    <ul class="social-btn">
       <li class="social-btn__item">
-        <a href="#"><img src="./img/icon-twitter.svg" alt="Twitter"></a>
+        <a class="social-btn__ancor" href="#"><img src="./img/icon-twitter.svg" alt="Twitter"></a>
       </li>
       <li class="social-btn__item">
-        <a href="#"><img src="./img/icon-facebook.svg" alt="Facebook"></a>
+        <a class="social-btn__ancor" href="#"><img src="./img/icon-facebook.svg" alt="Facebook"></a>
       </li>
       <li class="social-btn__item">
-        <a href="#"><img src="./img/icon-youtube.svg" alt="YouTube"></a>
+        <a class="social-btn__ancor" href="#"><img src="./img/icon-youtube.svg" alt="YouTube"></a>
       </li>
     </ul>
     <p class="footer__copyright">
-      Разработано <img src="./img/logo-htmlacademy.svg" alt="HTML Academy">
+      Разработано <img class="footer__copyright-image" src="./img/logo-htmlacademy.svg" alt="HTML Academy">
     </p>
+    </div>
   </footer>
 
 </body>
