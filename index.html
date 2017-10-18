@@ -204,52 +204,57 @@
       </section>
       <section class="price-table">
         <h2 class="visually-hidden">Прайс лист</h2>
-        <table>
-          <tr>
+        <table class="price-table__table">
+          <tr class="price-table__row">
             <td></td>
-            <th>база<span>1,99 usd</span></th>
-            <th>стандарт<span>3,99 usd</span></th>
-            <th>анлим<span>9,99 usd</span></th>
+            <th class="price-table__head">
+              <p class="price-table__title">база</p><span class="price-table__price">1,99 usd</span></th>
+            <th class="price-table__head">
+              <p class="price-table__title">стандарт</p><span class="price-table__price">3,99 usd</span></th>
+            <th class="price-table__head">
+              <p class="price-table__title">анлим</p><span class="price-table__price">9,99 usd</span></th>
           </tr>
-          <tr>
-            <td>Розовый фильтр</td>
-            <td><span class="icon-yes"></span></td>
-            <td><span class="icon-yes"></span></td>
-            <td><span class="icon-yes"></span></td>
+          <tr class="price-table__row">
+            <td class="price-table__data">Розовый фильтр</td>
+            <td class="price-table__data"><span class="icon-yes"></span></td>
+            <td class="price-table__data"><span class="icon-yes"></span></td>
+            <td class="price-table__data"><span class="icon-yes"></span></td>
           </tr>
-          <tr>
-            <td>Смайлики</td>
-            <td><span class="icon-cross"></span></td>
-            <td><span class="icon-yes"></span></td>
-            <td><span class="icon-yes"></span></td>
+          <tr class="price-table__row">
+            <td class="price-table__data">Смайлики</td>
+            <td class="price-table__data"><span class="icon-cross"></span></td>
+            <td class="price-table__data"><span class="icon-yes"></span></td>
+            <td class="price-table__data"><span class="icon-yes"></span></td>
           </tr>
-          <tr>
-            <td>Комментарии</td>
-            <td><span class="icon-cross"></span></td>
-            <td><span class="icon-cross"></span></td>
-            <td><span class="icon-yes"></span></td>
+          <tr class="price-table__row">
+            <td class="price-table__data">Комментарии</td>
+            <td class="price-table__data"><span class="icon-cross"></span></td>
+            <td class="price-table__data"><span class="icon-cross"></span></td>
+            <td class="price-table__data"><span class="icon-yes"></span></td>
           </tr>
         </table>
       </section>
     </div>
     <section class="contacts">
-      <div class="contacts__container">
-        <div class="contacts__title">
-          <p>Остались вопросы?</p>
-          <p>Свяжитесь с нами!</p>
-        </div>
-        <div class="contacts__item-container">
-          <div class="contacts__item">
-            <h3 class="contacts__item-title">Звоните:</h3>
-            <p class="contacts__item-paragraph">+7 (812) 555-66-66</p>
+      <div class="contacts__wrapper">
+        <div class="contacts__container">
+          <div class="contacts__title">
+            <p>Остались вопросы?</p>
+            <p>Свяжитесь с нами!</p>
           </div>
-          <div class="contacts__item">
-            <h3 class="contacts__item-title">Пишите:</h3>
-            <p class="contacts__item-paragraph">mail@htmlacademy.ru</p>
-          </div>
-          <div class="contacts__item">
-            <h3 class="contacts__item-title">Приезжайте в гости:</h3>
-            <p class="contacts__item-paragraph">ул. Большая Конюшенная, 19/8</p>
+          <div class="contacts__item-container">
+            <div class="contacts__item">
+              <h3 class="contacts__item-title contacts__item--order-first">Звоните:</h3>
+              <p class="contacts__item-paragraph">+7 (812) 555-66-66</p>
+            </div>
+            <div class="contacts__item">
+              <h3 class="contacts__item-title">Пишите:</h3>
+              <p class="contacts__item-paragraph">mail@htmlacademy.ru</p>
+            </div>
+            <div class="contacts__item contacts__item--order-second">
+              <h3 class="contacts__item-title">Приезжайте в гости:</h3>
+              <p class="contacts__item-paragraph">ул. Большая Конюшенная, 19/8</p>
+            </div>
           </div>
         </div>
       </div>
