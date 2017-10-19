@@ -4,20 +4,16 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  font-family: "Open Sans", sans-serif;
 }
 
 .slider__reviews-title {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   margin-top: 0;
-  order: 2;
 }
 
 .slider__reviews-paragraph {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   color: @midnight;
@@ -36,8 +32,6 @@
 }
 
 .slider__price-table-row {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
@@ -51,8 +45,6 @@
 }
 
 .slider__price-table-head {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
   font-weight: 300;
   font-size: 24px;
   color: white;
@@ -62,8 +54,6 @@
 }
 
 .slider__price-title {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
@@ -93,5 +83,30 @@
 @media (min-width: 660px) {
   .slider {
     width: 620px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider {
+    width: 690px;
+  }
+
+  .slider__reviews-title {
+    font-size: 24px;
+    order: 2;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  .slider__reviews-paragraph {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .slider__reviews-bio {
+    display: block;
+    order: 3;
+    margin: 0;
+    font-size: 18px;
   }
 }

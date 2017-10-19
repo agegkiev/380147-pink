@@ -10,6 +10,11 @@
   background-position: center center;
 }
 
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
 .page-header__container {
   min-height: 392px;
   background-image: url("../img/iphone-hand-mobile@1x.png");
@@ -28,6 +33,11 @@
 }
 
 @media (min-width: 660px) {
+  .page-header {
+    background-image: url("/img/back-tablet@1x.svg");
+    background-size: cover;
+  }
+
   .page-header__img {
     width: 300px;
     min-height: 620px;
@@ -42,14 +52,16 @@
   }
 
   .page-header__container {
-    min-width: 660px;
+    min-width: 640px;
     min-height: 620px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
-    background-position: 90% 58%,
-      50% -35%;
+    background-image: url("/img/iphone6tablet.svg"),
+    url("/img/Layer155.svg");
+    background-position: 50% 90%, 81% 45%;
+    background-size: 660px 545px, 195px 346px;
   }
 }
 
@@ -64,13 +76,8 @@
     display: flex;
     justify-content: flex-end;
     background-image: url("../img/iphone-5-in-hand-png.svg"),
-      url("../img/Layer155.svg");
+    url("../img/Layer155.svg");
     background-size: 75%, 25%;
     background-position: 149% 100%, 83% 50%;
-  }
-
-  .page-header__wrapper {
-    display: flex;
-    justify-content: space-around;
   }
 }

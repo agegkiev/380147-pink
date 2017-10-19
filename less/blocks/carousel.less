@@ -155,5 +155,33 @@
 @media (min-width: 1200px) {
   .carousel {
     width: 960px;
+    padding-top: 190px;
+    background-image: url("/img/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 24%;
+  }
+
+  .carousel__controls {
+    left: 47%;
+    bottom: -10%;
+  }
+
+  .carousel__inner {
+    width: 690px;
+  }
+
+    .btn-1:checked ~ .carousel__inner .carousel__sliders {
+    transform: translate(0);
+    transition: 1s;
+  }
+
+  .btn-2:checked ~ .carousel__inner .carousel__sliders {
+    transform: translate(-690px);
+    transition: 1s;
+  }
+
+  .btn-3:checked ~ .carousel__inner .carousel__sliders {
+    transform: translate(-1380px);
+    transition: 1s;
   }
 }
