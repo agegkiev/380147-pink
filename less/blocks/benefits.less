@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   background-image: url("../img/iphone-screen-mobile@1x.png"),
-  linear-gradient(-5deg, #f2f2f2 75%, white 75%);
+  linear-gradient(-6deg, #f2f2f2 76%, white 76%);
   background-repeat: no-repeat;
   background-position: 50% 107%;
   min-height: 1000px;
@@ -19,6 +19,7 @@
   line-height: 30px;
   width: 280px;
   min-height: 250px;
+  text-align: center;
 }
 
 .benefits__title--paragraph {
@@ -64,17 +65,15 @@
 @media (min-width: 660px) and (max-width: 1199px) {
   .benefits {
     min-height: 720px;
-    background-image: url("../img/screen-simle.png"),
-      url("../img/iphone.svg"),
-      linear-gradient(-4.5deg, #f2f2f2 62.5%, white 62.5%);
-    background-size: 237px, 268px 547px, 100%;
-    background-position: 9% 100%, 5% 139%, 13% 139%;
+    background-image: linear-gradient(-4.5deg, #f2f2f2 62.5%, white 62.5%);
+    background-size: 100%;
+    background-position: 13% 139%;
   }
 
   .benefits__title {
     font-size: 40px;
     width: 100%;
-    min-height: 270px;
+    min-height: 240px;
     padding-top: 55px;
     text-align: center;
   }
@@ -90,10 +89,17 @@
 
   .benefits__item-wrapper {
     width: 620px;
+    min-height: 480px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-start;
+    background-image: url("../img/screen-simle.png"),
+      url("../img/iphone.svg");
+    background-repeat: no-repeat;
+    background-size: 236px, 268px 547px;
+    background-position: 6% 99%, 2% 0;
+    .green;
   }
 
   .benefits__item-container {
