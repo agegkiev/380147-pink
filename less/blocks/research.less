@@ -3,6 +3,7 @@
   min-height: 420px;
   display: flex;
   justify-content: space-around;
+  background-color: #ffffff;
 }
 
 .research__container {
@@ -68,14 +69,11 @@
   }
 }
 
-//@media (min-width: 660px) {
-//  .research__img {
-//
-//  }
-//}
 @media (min-width: 1200px) {
   .research {
     width: 100%;
+    background-color: #f2f2f2;
+    min-height: 440px;
   }
 
   .research__container {
@@ -88,12 +86,17 @@
 
   .research__title {
     font-size: 30px;
+    margin-top: 12px;
+    letter-spacing: 0.019em;
   }
 
   .research__paragraph {
     font-size: 18px;
-    width: 530px;
+    width: 520px;
     min-height: 100px;
+    margin-top: 25px;
+    line-height: 28px;
+    margin-bottom: 20px;
   }
 
   .research__info {
@@ -102,20 +105,17 @@
   }
 
   .research__img {
-    position: relative;
-    right: 14px;
-    bottom: 5px;
     flex-shrink: 0;
-    width: 300px;
-    height: 347px;
+    margin-right: 30px;
+    margin-bottom: 10px;
     background-image: url("../img/diagram-fill.svg"),
-    url("../img/timer.svg");
+      url("../img/timer.svg");
     background-repeat: no-repeat;
     background-size: 257px 257px, 100%;
-    background-position: 49.7% 78%, 50% 50%;
+    background-position: 50% 56%, 50% 37%;
     font-size: 120px;
-    padding-top: 40px;
-    padding-right: 5px;
+    padding-top: 5px;
+    padding-left: 75px;
   }
 
   .research__ankor {

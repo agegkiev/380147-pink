@@ -3,6 +3,8 @@
   width: 280px;
   text-align: center;
   font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .slider__reviews-title {
@@ -89,10 +91,24 @@
 @media (min-width: 660px) {
   .slider {
     width: 620px;
+    padding-top: 15px;
   }
 
   .slider__reviews-bio {
-    display: none;
+    display: block;
+    font-size: 14px;
+    order: 3;
+  }
+
+  .slider__reviews-title {
+    font-size: 20px;
+    margin-top: 35px;
+    margin-bottom: 0px;
+    order: 2;
+  }
+
+  .slider__reviews-paragraph {
+    font-size: 18px;
   }
 }
 

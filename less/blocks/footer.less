@@ -23,17 +23,31 @@
 
 @media (min-width: 660px) {
   .footer {
-    flex-direction: row;
+    flex-direction: ;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 620px;
     min-height: 130px;
-    padding: 0 20px;
+  }
+
+  .footer__copyright-image {
+    margin-left: 15px;
+  }
+
+  .footer__copyright {
+    font-size: 14px;
   }
 }
 
 @media (min-width: 1200px) {
   .footer {
-    min-height: 200px;
+    min-height: 255px;
     padding: 0;
     flex-direction: row;
     justify-content: space-around;
@@ -44,7 +58,7 @@
     justify-content: space-between;
     align-items: baseline;
     width: 960px;
-    padding: 0 10px;
+    padding: 0 5px;
   }
 
   .footer__copyright {
