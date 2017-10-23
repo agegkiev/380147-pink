@@ -1,6 +1,6 @@
 .research {
   min-width: 660px;
-  min-height: 470px;
+  min-height: 420px;
   display: flex;
   justify-content: space-around;
 }
@@ -12,28 +12,54 @@
   min-height: 395px;
   display: flex;
   justify-content: space-between;
-  padding: 59px 20px 52px;
+  align-items: center;
 }
 
 .research__img {
   width: 300px;
-  height: 276px;
+  min-height: 100%;
   color: @pink;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 10%;
   font-weight: 700;
   font-size: 96px;
-  background-image: url("../img/timer.svg"),
-    url("../img/diagram-fill.svg");
+  background-image: url("../img/diagram-fill.svg"),
+  url("../img/timer.svg");
   background-repeat: no-repeat;
-  background-size: contain, 59%;
-  background-position: 50% 50%, 49.7% 69%;
+  background-size: 67%, 79%;
+  background-position: 17% 53%, 0 41%;
 }
 
 .research__info {
   width: 310px;
   height: 276px;
+}
+
+.research__title {
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 13px;
+}
+
+.research__paragraph {
+  font-size: 14px;
+  line-height: 24px;
+  width: 296px;
+  min-height: 100px;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.research__ankor {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: underline;
+  color: @pink;
+  font-size: 14px;
 }
 
 @media (max-width: 660px) {
@@ -42,6 +68,11 @@
   }
 }
 
+//@media (min-width: 660px) {
+//  .research__img {
+//
+//  }
+//}
 @media (min-width: 1200px) {
   .research {
     width: 100%;
@@ -59,7 +90,7 @@
     font-size: 30px;
   }
 
-  .research_paragraph {
+  .research__paragraph {
     font-size: 18px;
     width: 530px;
     min-height: 100px;
@@ -78,21 +109,17 @@
     width: 300px;
     height: 347px;
     background-image: url("../img/diagram-fill.svg"),
-      url("../img/timer.svg");
+    url("../img/timer.svg");
     background-repeat: no-repeat;
     background-size: 257px 257px, 100%;
     background-position: 49.7% 78%, 50% 50%;
     font-size: 120px;
     padding-top: 40px;
-    padding-right:5px;
+    padding-right: 5px;
   }
 
   .research__ankor {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    text-decoration: underline;
-    color: @pink;
   }
 }

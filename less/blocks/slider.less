@@ -2,8 +2,6 @@
   float: left;
   width: 280px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -24,6 +22,7 @@
 .slider--price {
   float: left;
   width: 280px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .slider__table {
@@ -37,7 +36,7 @@
   text-transform: uppercase;
   color: @midnight;
   border-bottom: 2px solid #e5e5e5;
-  padding: 20px 17px 20px 23px;
+  padding: 23px 18px 19px 21px;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -49,8 +48,9 @@
   font-size: 24px;
   color: white;
   background-color: @midnight;
-  padding: 20px 0;
+  padding: 0 87px;
   position: relative;
+  height: 100px;
 }
 
 .slider__price-title {
@@ -77,6 +77,12 @@
     left: 13px;
     top: 13px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: 320px) {
+  .slider__reviews-bio {
+    display: none;
   }
 }
 
