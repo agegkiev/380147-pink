@@ -146,20 +146,28 @@
     </section>
     <section class="upload">
       <div class="upload__container">
-        <img class="upload__img" src="./img/photo-road-mobile@1x.jpg" width="280" height="374" alt="">
+        <picture class="upload__picture">
+          <source srcset="./img/photo-road-desktop@1x.jpg, ./img/photo-road-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+          <source srcset="./img/photo-road-tablet@1x.jpg, ./img/photo-road-tablet@2x.jpg 2x" media="(min-width: 660px)">
+          <source srcset="./img/photo-road-mobile@2x.jpg 2x" media="(min-width: 320px)">
+          <img class="upload__img" src="./img/photo-road-mobile@1x.jpg" alt="">
+        </picture>
         <div class="upload__item-container">
           <div class="upload__btn-container">
-            <img class="upload__item" src="./img/icon-editor-crop.svg" width="48" height="48" alt="">
-            <img class="upload__item--active" src="./img/icon-editor-fill.svg" width="48" height="48" alt="">
-            <img class="upload__item" src="../img/icon-editor-contrast.svg" width="32" height="32" alt="">
+            <div class="upload__item-wrapper">
+              <img class="upload__item" src="./img/icon-editor-crop.svg" width="48" height="48" alt="">
+            </div>
+            <div class="upload__item-wrapper">
+              <img class="upload__item upload__item--active" src="./img/icon-editor-fill.svg" width="48" height="48" alt="">
+            </div>
+            <div class="upload__item-wrapper">
+              <img class="upload__item" src="../img/icon-editor-contrast.svg" width="32" height="32" alt="">
+            </div>
           </div>
-        </div>
-      </div>
-      <hr>
-      <div class="upload__container">
-        <div class="button__container">
-          <a href="" class="button button--page-photo">Запостить</a>
-          <a href="" class="button button--page-photo-disabled">Отмена</a>
+          <div class="button__container">
+            <a href="" class="button button--page-photo">Запостить</a>
+            <a href="" class="button button--page-photo-disabled">Отмена</a>
+          </div>
         </div>
       </div>
     </section>

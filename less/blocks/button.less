@@ -40,10 +40,41 @@
   .button {
     width: 300px;
   }
+
+  .button__container {
+    padding: 0;
+    padding-top: 40px;
+  }
+
+  .button--page-photo {
+    width: 260px;
+  }
+
+  .button--page-photo-disabled {
+    width: 260px;
+  }
 }
 
 @media (min-width: 1200px) {
   .button {
     font-size: 21px;
+  }
+
+  .button button--page-photo {
+    width: 183px;
+  }
+
+  .button__container {
+    padding: 0;
+    padding-top: 40px;
+    width: 410px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .button__container {
+    padding: 0;
   }
 }
