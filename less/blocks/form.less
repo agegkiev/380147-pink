@@ -23,6 +23,10 @@
   align-items: center;
 }
 
+.form__container--bg-gray {
+  background-color: #f2f2f2;
+}
+
 .form__submit {
   width: 280px;
   min-height: 60px;
@@ -63,6 +67,7 @@
 .form__input-text {
   min-width: 277px;
   height: 62px;
+  margin-bottom: 15px;
 }
 
 .form__input-text::placeholder {
@@ -82,13 +87,11 @@
 }
 
 .form__fieldset-achievements {
-  background-color: #f2f2f2;
   padding-top: 33px;
   order: 2;
 }
 
 .form__fieldset-OS {
-  background-color: #f2f2f2;
   min-height: 340px;
   padding-top: 30px;
   order: 4;
@@ -96,7 +99,9 @@
 
 .form__fieldset-bio {
   margin-bottom: 25px;
+  margin-top: 12px;
   order: 1;
+  min-height: 347px;
 }
 
 .form__label-checkbox {
@@ -108,8 +113,8 @@
 }
 
 .form__fieldset-contacts {
-  padding-top: 25px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 25px;
   order: 3;
 }
 
@@ -170,6 +175,31 @@
   order: 5;
 }
 
+.form__paragraph-item {
+  margin-top: 40px;
+}
+
+.form__legend-achievements {
+  margin: 0;
+  padding-top: 35px;
+  padding-bottom: 10px;
+}
+
+.form__legend-os {
+  margin: 0;
+  padding-top: 37px;
+  margin-bottom: 14px;
+}
+
+.form__submit-bottom {
+  text-align: center;
+}
+
+.form__fieldset-bio-label-container {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 659px) {
   .form__paragraph-item-hidden {
     display: none;
@@ -190,6 +220,23 @@
     align-self: center;
   }
 
+  .form__container--bg-gray {
+    background-color: white;
+  }
+
+  .form__fieldset-bio-label-container {
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 52px;
+  }
+
+  .form__label-bio {
+    width: auto;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 20px;
+  }
+
   .form__fieldset {
     width: 620px;
     margin: 0 auto;
@@ -197,7 +244,6 @@
 
   .form__legend-contacts {
     padding: 0;
-    padding-top: 5px;
     margin: 0 auto;
     text-align: center;
   }
@@ -218,6 +264,20 @@
 
   .form__input-text {
     width: 100%;
+    margin: 0;
+  }
+
+  .form__input-contacts {
+    width: 500px;
+    min-height: 60px;
+    margin-bottom: 15px;
+  }
+
+  .form__contacts-item-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 15px;
   }
 
   .form__bio {
@@ -237,21 +297,31 @@
   }
 
   .form__fieldset-OS {
-    order: 1;
+    border: 1px solid grey;
     background-color: white;
     padding: 0;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
+    min-height: 200px;
+    margin-bottom: 55px;
+  }
+
+  .form__legend-os {
+    padding: 0;
+    margin-bottom: 40px;
+    width: 100px;
   }
 
   .form__fieldset-contacts {
-    order: 2;
-    padding-bottom: 17px;
+    padding-bottom: 0;
+    padding-top: 36px;
+    border: 1px solid grey;
   }
 
   .form__fieldset-achievements {
-    order: 3;
+    border: 1px solid grey;
     background-color: white;
     margin-bottom: 51px;
+    margin-top: 50px;
   }
 
   .form__pink-text--text-center {
@@ -288,17 +358,14 @@
     flex-direction: column-reverse;
   }
 
-  .form_contacts-text {
-    margin-top: 15px;
-  }
-
   .form__legend-achievements {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
 
   .form__label-checkbox {
     padding-left: 120px;
     width: 500px;
+    margin-bottom: 46px;
   }
 
   .form__textarea-legend {
@@ -315,6 +382,7 @@
   }
 
   .form__fieldset-textarea {
+    border: 1px solid grey;
     align-self: center;
     min-height: 305px;
     margin-bottom: 72px;
@@ -340,6 +408,26 @@
   .form__submit {
     width: 300px;
   }
+
+  .form__container-bio {
+    order: 1;
+  }
+
+  .form__container-achievements {
+    order: 4;
+  }
+
+  .form__container-contacts {
+    order: 3;
+  }
+
+  .form__container-OS {
+    order: 2;
+  }
+
+  .form__container-textarea {
+    order: 5;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -357,6 +445,11 @@
   .form__fieldset-contacts {
     border: 1px solid grey;
     padding: 0;
+    width: 940px;
+    margin-top: 25px;
+    margin-left: 10px;
+    flex-direction: row;
+    align-items: center;
   }
 
   .form__paragraph-item-hidden {
@@ -371,18 +464,17 @@
   }
 
   .form__fieldset-bio {
-    width: 435px;
+    width: 445px;
     margin: 0;
     padding: 0;
-    padding-left: 10px;
-    padding-top: 29px;
   }
 
   .form__fieldset-OS {
     width: 436px;
-    min-height: 320px;
+    min-height: 313px;
     height: 300px;
     margin: 0;
+    margin-top: 7px;
     padding: 0;
     margin-left: 70px;
   }
@@ -424,15 +516,101 @@
 
   .form__label-checkbox {
     margin: 0;
-    padding-left: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    padding-left: 60px;
     width: 260px;
     min-height: 35px;
   }
 
   .form__fieldset-achievements {
-    .green;
     margin-top: 50px;
     width: 940px;
-    padding: 0;
+    padding: 40px 0 0 60px;
+    margin-left: 10px;
+    min-height: 200px;
+  }
+
+  .form__legend-achievements {
+    margin-bottom: 0;
+  }
+
+  .form__fieldset-bio-label-container {
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 30px;
+    width: 444px;
+    padding-left: 10px;
+    padding-top: 25px;
+  }
+
+  .form__label-bio {
+    width: auto;
+  }
+
+  .form__legend-os {
+    padding-top: 5px;
+    width: 370px
+  }
+
+  .form__input-contacts {
+    width: 376px;
+  }
+
+  .form__contacts-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 25px;
+    margin-top: 35px;
+    margin-bottom: 5px;
+  }
+
+  .form__achievements-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__checkbox-item1 {
+    order: 1;
+  }
+
+  .form__checkbox-item3 {
+    margin-right: 40px;
+    order: 2;
+  }
+
+  .form__checkbox-item5 {
+    margin-right: 0;
+    order: 3;
+  }
+
+  .form__checkbox-item2 {
+    order: 4;
+  }
+
+  .form__checkbox-item4 {
+    margin-right: 40px;
+    order: 5;
+  }
+
+  .form__checkbox-item6 {
+    margin-right: 0;
+    order: 6;
+  }
+
+  .form__fieldset-textarea,
+  .form__container-textarea {
+    width: 940px;
+    margin-left: 5px;
+    min-height: 230px;
+  }
+
+  .form__textarea {
+    width: 820px;
+    min-height: 125px;
+  }
+
+  .form__button-container {
+    width: 100%;
   }
 }
