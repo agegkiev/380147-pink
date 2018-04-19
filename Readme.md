@@ -1,8 +1,6 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Азнаур Гегкиев](https://up.htmlacademy.ru/adaptive/12/user/380147).
-* Наставник: [Сергей Рубец](https://htmlacademy.ru/profile/amator).
-
+* Студент: [Азнаур Гегкиев](https://up.htmlacademy.ru/adaptive/12/user/380147)
 ---
 
 **Обратите внимание на файл:**
